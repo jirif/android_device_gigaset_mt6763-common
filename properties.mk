@@ -483,9 +483,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.netd=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.android.hardware.sensors@2.0-service-mediatek=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.MDP=$(VENDOR_LOG_LEVEL)
-
-# ZRAM writeback
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.zram.mark_idle_delay_mins=60 \
-    ro.zram.first_wb_delay_mins=180 \
-    ro.zram.periodic_wb_delay_hours=24
