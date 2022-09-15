@@ -106,7 +106,6 @@ on fs
     mount_all /vendor/etc/fstab.mt6763 --early
     write /sys/kernel/debug/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"
-    swapon_all /vendor/etc/fstab.mt6763
 
 on late-fs
     # Wait for keymaster HALs (TEE and StrongBox)
@@ -836,6 +835,10 @@ on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
     #restore vcore parameters
     write /sys/power/vcorefs/vcore_debug "KIR_BOOTUP -1"
+
+# Enable ZRAM
+on property:sys.boot_completed=1
+    swapon_all /vendor/etc/fstab.mt6763
 
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
