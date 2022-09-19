@@ -840,6 +840,10 @@ on property:sys.boot_completed=1
 on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.mt6763
 
+# Reinit lmkd to reconfigure lmkd properties
+on property:sys.boot_completed=1
+    setprop lmkd.reinit 1
+
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
     class main
