@@ -74,7 +74,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.mtk_pq_support=2 \
     ro.vendor.mtk_pq_color_mode=1 \
     ro.vendor.mtk_blulight_def_support=1 \
-    debug.sf.disable_backpressure=1
+    debug.sf.disable_backpressure=1 \
+    debug.cpurend.vsync=false
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
