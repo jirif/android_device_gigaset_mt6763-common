@@ -480,7 +480,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.GED=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.netd=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.android.hardware.sensors@2.0-service-mediatek=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.android.hardware.sensors@2.0-service-mediatek=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.MDP=$(VENDOR_LOG_LEVEL)
 
 # ZRAM writeback
 PRODUCT_PROPERTY_OVERRIDES += \
