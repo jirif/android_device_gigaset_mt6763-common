@@ -556,7 +556,9 @@ on post-fs-data
 on boot
     write /proc/bootprof "INIT:boot"
 
-    write /proc/sys/vm/dirty_writeback_centisecs 300
+    write /proc/sys/vm/dirty_writeback_centisecs 600
+    write /proc/sys/vm/dirty_background_ratio 5
+    write /proc/sys/vm/dirty_ratio 80
     chmod 0660 /sys/power/autosleep
 
     chown system system /sys/devices/system/cpu/cpufreq/hotplug/cpu_num_base
