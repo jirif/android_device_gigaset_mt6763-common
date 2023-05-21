@@ -116,7 +116,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # LMK
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lmk.downgrade_pressure=60 \
     persist.vendor.duraspeed.support=1 \
     persist.vendor.duraspeed.app.on=1 \
     persist.vendor.heavy.loading.support=1 \
