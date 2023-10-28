@@ -20,6 +20,10 @@ else
 VENDOR_LOG_LEVEL=S
 endif
 
+# APEX
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.apex.updatable=false
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.mtk_audio_alac_support=1 \
