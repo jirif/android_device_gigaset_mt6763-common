@@ -229,6 +229,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
 
+# Cached app compaction
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.activity_manager.use_compaction=true
+
 # MTK services log level
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.AT=$(VENDOR_LOG_LEVEL) \
